@@ -131,9 +131,9 @@ def current_time(self):
         seconds = current_time[4:6]
         milliseconds = current_time[6:]
 
-        display_time = f"{hours}:{minutes}:{seconds}:{milliseconds}"  #mls NEFUGUJU
-
-        for i in range(8): #2hod, 2min, 2sec, 2 mls
+        display_time = f"{hours}:{minutes}:{seconds}:{milliseconds}"  #ms NEFUGUJU
+    
+        for i in range(8): #2hod, 2min, 2sec, 2 ms
             if i < 7:
                 digit = int(display_time[i])
                 self.segments[i].display(digit)
